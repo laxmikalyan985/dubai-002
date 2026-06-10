@@ -1,265 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Dubai 777 Online </title>
-    <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1014964210987019');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1014964210987019&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Arial, sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dubai 777 App</title>
 
-        body {
-            background: linear-gradient(180deg, #e3f2fd, #ffffff);
-            color: #0d47a1;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        .main {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 12px;
-        }
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        header {
-            background: linear-gradient(135deg, #045901, #045901);
-            color: white;
-            text-align: center;
-            padding: 14px;
-            border-radius: 18px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-        }
+  <style>
 
-        header h1 {
-            font-size: 18px;
-            font-weight: 700;
-        }
+    body{
+      background:#0C3D28;
+      font-family:'Poppins',sans-serif;
+    }
 
-        header p {
-            font-size: 12px;
-            opacity: 0.9;
-            margin-top: 4px;
-        }
+    .main-wrapper{
+      max-width:395px;
+      margin:auto;
+      padding:20px 15px 40px;
+      text-align:center;
+    }
 
-        .content {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            flex: 1;
-            margin-top: 12px;
-        }
+    /* Badge */
+    .trending-badge{
+      display:inline-block;
+      background:linear-gradient(90deg,#ff4fa0,#ff72b5);
+      color:#fff;
+      padding:8px 18px;
+      border-radius:30px;
+      font-size:13px;
+      font-weight:600;
+      box-shadow:0 5px 15px rgba(255,79,160,.35);
+      margin-bottom:22px;
+    }
 
-        .card {
-            background: white;
-            border-radius: 18px;
-            padding: 16px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-        }
+    /* App Box */
+    .app-icon-box{
+      width:140px;
+      height:140px;
+      background:#fff;
+      border-radius:25px;
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 8px 20px rgba(0,0,0,.06);
+    }
 
-        /* APP SECTION */
-        .download-box {
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+    /* ADD THIS NEW CSS */
 
-        /* WOMEN AVATAR */
-        .avatar {
-            width: 150px;
-            max-width: 100%;
-            margin: 0 auto 14px;
-            display: block;
-            animation: float 3s ease-in-out infinite;
-            filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.25));
-        }
+.app-logo{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:25px;
+}
 
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
+    /* .app-icon::before,
+    .app-icon::after{
+      content:'';
+      position:absolute;
+      width:18px;
+      height:40px;
+      background:linear-gradient(to bottom,#ffb5d2,#ff4d8d);
+      border-radius:12px;
+      transform:rotate(40deg);
+    }
 
-            50% {
-                transform: translateY(-8px);
-            }
+    .app-icon::after{
+      transform:rotate(-40deg);
+    } */
 
-            100% {
-                transform: translateY(0px);
-            }
-        }
+    /* Title */
+    .title{
+      color:#ecc836;
+      font-weight:700;
+      font-size:42px;
+      margin-top:25px;
+    }
 
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 20px 0;
-            font-size: 18px;
-            border-radius: 40px;
-            text-decoration: none;
-            color: white;
-            font-weight: 700;
-            text-align: center;
-            background: linear-gradient(135deg, #045901, #045901);
-            box-shadow: 0 8px 22px rgba(13, 71, 161, 0.4);
-            letter-spacing: 1px;
-            transition: 0.2s ease;
-        }
+    .subtitle{
+      color:#fffcfc;
+      font-size:16px;
+      line-height:1.8;
+      margin-top:10px;
+    }
 
-        .btn:hover {
-            transform: translateY(-2px);
-        }
+    /* DOWNLOAD BUTTON */
+    .download-btn{
+      position:relative;
+      overflow:hidden;
+      margin-top:28px;
+      background:linear-gradient(90deg,#2f67ff,#1f43c9);
+      color:#fff;
+      border:none;
+      width:100%;
+      padding:20px;
+      border-radius:24px;
+      font-size:22px;
+      font-weight:700;
+      box-shadow:0 12px 25px rgba(47,103,255,.35);
+      transition:all .3s ease;
+      animation:pulse 2s infinite;
+    }
 
-        .btn:active {
-            transform: scale(0.96);
-        }
+    /* Hover Effect */
+    .download-btn:hover{
+      transform:translateY(-3px) scale(1.02);
+      box-shadow:0 15px 30px rgba(47,103,255,.5);
+      background:linear-gradient(90deg,#2559eb,#183ab6);
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 12px;
-            margin-top: 10px;
-        }
+    /* Click Effect */
+    .download-btn:active{
+      transform:scale(.96);
+    }
 
-        th,
-        td {
-            border: 1px solid #e0e0e0;
-            padding: 8px;
-            text-align: center;
-        }
+    /* Shine Animation */
+    .download-btn::before{
+      content:'';
+      position:absolute;
+      top:0;
+      left:-80px;
+      width:50px;
+      height:100%;
+      background:rgba(255,255,255,.35);
+      transform:skewX(-20deg);
+      animation:shine 2.5s infinite;
+    }
 
-        th {
-            background: #e3f2fd;
-            font-weight: 700;
-        }
+    /* Pulse Animation */
+    @keyframes pulse{
+      0%{
+        box-shadow:
+        0 12px 25px rgba(47,103,255,.35),
+        0 0 0 0 rgba(47,103,255,.4);
+      }
 
-        .features {
-            text-align: center;
-            font-size: 12px;
-            line-height: 1.8;
-            color: #333;
-            font-weight: 500;
-        }
+      70%{
+        box-shadow:
+        0 12px 25px rgba(47,103,255,.35),
+        0 0 0 18px rgba(47,103,255,0);
+      }
 
-        footer {
-            text-align: center;
-            font-size: 11px;
-            color: #666;
-            padding-top: 10px;
-        }
+      100%{
+        box-shadow:
+        0 12px 25px rgba(47,103,255,.35),
+        0 0 0 0 rgba(47,103,255,0);
+      }
+    }
 
-        /* MOBILE */
-        @media(max-width:480px) {
+    /* Shine Move */
+    @keyframes shine{
+      0%{
+        left:-80px;
+      }
 
-            .avatar {
-                width: 110px;
-            }
+      100%{
+        left:120%;
+      }
+    }
 
-            .btn {
-                font-size: 16px;
-                padding: 18px 0;
-            }
+    /* Feature Cards */
+    .feature-card{
+      background:#fff;
+      border-radius:24px;
+      padding:26px 24px;
+      text-align:left;
+      margin-top:24px;
+      box-shadow:0 6px 18px rgba(0,0,0,.04);
+    }
 
-        }
-    </style>
+    .feature-title{
+      font-size:28px;
+      font-weight:500;
+      margin-bottom:10px;
+      color:#111;
+    }
 
+    .feature-text{
+      color:#666;
+      font-size:16px;
+    }
+
+    /* Footer Badge */
+    .bottom-badge{
+      display:inline-block;
+      background:#fff;
+      padding:12px 24px;
+      border-radius:30px;
+      margin-top:35px;
+      font-weight:600;
+      color:#d1146a;
+      box-shadow:0 6px 18px rgba(0,0,0,.05);
+    }
+
+    /* Responsive */
+    @media(max-width:576px){
+
+      .title{
+        font-size:30px;
+      }
+
+      .download-btn{
+        font-size:18px;
+        padding:16px;
+      }
+
+      .feature-title{
+        font-size:22px;
+      }
+
+      .feature-text{
+        font-size:14px;
+      }
+
+      .app-icon-box{
+        width:120px;
+        height:120px;
+      }
+
+    }
+
+  </style>
+
+  <!-- meta -->
 </head>
 
 <body>
 
-    <div class="main">
+  <div class="main-wrapper">
 
-        <header>
-            <h1>🎯 Dubai 777 </h1>
-            <p>Trusted mtk Platform</p>
-        </header>
-
-        <div class="content">
-
-            <!-- DOWNLOAD CARD -->
-            <div class="card download-box">
-
-                <!-- WOMEN AVATAR PNG -->
-                <!-- apni png image ka link yaha lagao -->
-                <img src="https://dubai777matka.vercel.app/logo.webp" alt="Women Avatar" class="avatar">
-
-                <a href="https://dubai777matka.vercel.app/dubai-777.apk" class="btn">🚀 DOWNLOAD APP</a>
-
-            </div>
-
-            <!-- GAME RATE CARD -->
-            <div class="card">
-                <h2>💰 Game Rates</h2>
-
-                <table>
-                    <tr>
-                        <th>Game</th>
-                        <th>Return</th>
-                    </tr>
-
-                    <tr>
-                        <td>Single</td>
-                        <td>10→100</td>
-                    </tr>
-
-                    <tr>
-                        <td>Jodi</td>
-                        <td>10→1000</td>
-                    </tr>
-
-                    <tr>
-                        <td>SP</td>
-                        <td>10→1500</td>
-                    </tr>
-
-                    <tr>
-                        <td>DP</td>
-                        <td>10→3000</td>
-                    </tr>
-
-                    <tr>
-                        <td>TP</td>
-                        <td>10→10000</td>
-                    </tr>
-                </table>
-            </div>
-            <a href="https://dubai777matka.vercel.app/dubai-777.apk" class="btn">🚀 DOWNLOAD APP</a>
-            <!-- FEATURES -->
-            <div class="card features">
-                ✔ Fast withdrow <br>
-                ✔ Trusted Platform <br>
-                ✔ Daily winnns
-            </div>
-
-        </div>
-
-        <footer>
-            © 2026 Dubai 777 
-        </footer>
-
+    <!-- Top Badge -->
+    <div class="trending-badge">
+      🔥 MOST TRENDING APP
     </div>
 
-</body>
+    <!-- App Icon -->
+    <div class="app-icon-box">
+  <img src="https://dubai777matka.vercel.app/logo.webp" alt="App Logo" class="app-logo">
+</div>
 
+    <!-- Title -->
+    <h1 class="title">dubai 777 App</h1>
+
+    <!-- Subtitle -->
+    <p class="subtitle">
+      Download the official dubai 777 mtk Android App for fast
+      results and smooth experience.
+    </p>
+
+    <!-- Download Button -->
+    <button class="download-btn"
+onclick="window.location.href='https://dubai777-mt.vercel.app/dubai777.apk'">
+  ⬇ DOWNLOAD APK
+</button>
+
+    <!-- Features -->
+    <div class="feature-card">
+      <div class="feature-title">⚡ Fast Results</div>
+      <div class="feature-text">
+        Instant updates without delay.
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-title">🔒 Secure App</div>
+      <div class="feature-text">
+        Your data stays protected.
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-title">📱 Mobile Friendly</div>
+      <div class="feature-text">
+        Smooth on all Android phones.
+      </div>
+    </div>
+
+    <!-- Footer Badge -->
+    <div class="bottom-badge">
+      ✓ Official APK • ✓ Android Only
+    </div>
+
+  </div>
+
+</body>
 </html>
